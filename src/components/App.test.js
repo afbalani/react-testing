@@ -10,6 +10,10 @@ beforeEach(() => {
     wrapped = shallow(<App />)  
 })
 
+afterEach(() => {
+  wrapped.unmount()
+})
+
 it('Shows comment box and comment list', () => {
   
   expect(wrapped.find(CommentBox).length).toEqual(1)
