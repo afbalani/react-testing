@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import CommentBox from 'components/CommentBox'
 import CommentList from 'components/CommetList'
 
-export default() => {
-    return (
-        <div>
-            I am app component
-            <CommentBox />
-            <CommentList />
-        </div>
-    )
+class App extends Component {
+    render() {
+        return (
+            <div>
+                I am app component
+                <CommentBox />
+                <CommentList />
+            </div>
+        )
+    }
 }
+export default App
